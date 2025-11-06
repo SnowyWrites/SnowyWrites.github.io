@@ -1,0 +1,64 @@
+body {
+      background-image: url("images/portal.jpg");
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #ff00ff;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    /* CRT Scanline effect */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.03) 0px,
+        rgba(0,0,0,0.1) 2px
+      );
+      pointer-events: none;
+    }
+
+    h1 {
+        font-family: "Jersey 25", system-ui;
+      font-size: 3.5em;
+      text-shadow: 0 0 5px #ff00ff, 0 0 15px #00ffff, 0 0 30px #ff00ff;
+      animation: flicker 3s infinite;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #00ffff;
+      margin-top: 10px;
+      text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff;
+    }
+
+    a {
+      margin-top: 50px;
+      text-decoration: none;
+      font-size: 1.5em;
+      color: #ff00ff;
+      padding: 10px 20px;
+      border: 2px solid #ff00ff;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+      text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff;
+    }
+
+    a:hover {
+      background: #ff00ff;
+      color: black;
+      box-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+    }
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0.4; }
+    }

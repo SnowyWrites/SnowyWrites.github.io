@@ -1,0 +1,368 @@
+/*Main page*/
+:root {
+  --button-font: calc(1.5vw + 1.5vh) "Jersey 25", sans-serif;
+  --button-text-color: rgb(196, 230, 250);
+  --background-color: rgba(54, 143, 124, 0.6);
+  --banner-color: rgb(13, 119, 161, 0.7);
+  --banner-font: "Girassol", serif;
+  --main-outline: double rgb(196, 230, 250);
+  --grid-outline: solid rgb(196, 230, 250) 2px;
+  --button-box-shadow: 0 0 20px #00ffffcc, inset 0 0 10px #66ccff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+  overflow-x: hidden;
+  flex-shrink: 1;
+}
+
+h1{
+  font-family: Georgia, serif;
+  font-size: calc(1.5vw + 1.5vh);
+  overflow-wrap: break-word;
+}
+
+h2{
+  font-family: Georgia, serif;
+  font-size: calc(0.9vw + 0.9vh);
+  overflow-wrap: break-word;
+}
+
+h3{
+  font-family: Georgia, serif;
+  font-size: calc(0.8vw + 0.8vh);
+  overflow-wrap: break-word;
+}
+
+p{
+  font-family: Georgia, serif;
+  font-size: calc(0.7vw + 0.7vh);
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(196, 230, 250);
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/**{
+  outline: red dashed 1px;
+}*/
+
+.mainbody {
+    background-image: url("images/jaibackground.jpg");
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 0px;
+    padding: 10px;
+    z-index: 0;
+}
+
+.mainheaderbox{
+  background: var(--background-color);
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  max-width: 95%;
+  height: auto;
+  padding: 15px;
+  margin: 15px auto;
+  outline: var(--main-outline);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.titleimage{
+  object-fit: scale-down;
+  max-width: 18%;
+  width: 100%;
+  height: auto;
+  margin-left: 2%;
+  flex-shrink: 2;
+  background-size: contain;
+  border-radius: 50%;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.foxtitleimage{
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 73%;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.maincontainer {
+  max-width: 95%;
+  width: 100%;
+  margin: 15px auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mainnavbar {
+  font: var(--button-font);
+  text-align: center;
+  display: inline-block;
+  background: var(--background-color);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow: visible;
+  padding: 10px;
+  margin: 20px auto;
+  outline: var(--main-outline);
+  z-index: 2;
+}
+
+.maindropdown{
+  position: relative;
+  display: inline-block;
+  color: var(--button-text-color);
+}
+
+.maindropbutton{
+  font: var(--button-font);
+  color:var(--button-text-color);
+  background: rgba(56, 134, 108, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.maindropdowncontent{
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  box-shadow: 2px 5px 14px 3px rgba(0,0,0,0.75);
+  outline: var(--grid-outline);
+  width: auto;
+  top: 100%;
+  left: 0;
+  margin: 0 auto;
+  padding: 8%;
+  box-sizing: border-box;
+}
+
+.maindropdowncontent a{
+  text-wrap: nowrap;
+  display: block;
+  width: 100%;
+}
+
+.maindropdowncontent a:hover{
+  background-color: rgba(13, 119, 161, 0.7);
+  border-radius: 80%;
+  box-shadow: 0 0 20px #00ffffcc, inset 0 0 10px #66ccff;
+  width: 100%;
+}
+
+.maindropdown:hover .maindropdowncontent{
+  display: block;
+  z-index: 4;
+}
+
+.maindropbutton:hover {
+  background:var(--banner-color);
+  border-radius: 80%;
+  box-shadow: var(--button-box-shadow);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN BODY~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mainpage {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.mainbackgroundbox {
+  background: var(--background-color);
+  outline: var(--main-outline);
+  width: 100%;
+  max-height: none;
+  overflow-y: auto;
+  margin: 10px auto;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction:column;
+  z-index: 2;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SIDE BAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mainpagesidebar {
+  background: var(--background-color);
+  outline: var(--main-outline);
+  width: 15%;
+  min-width: 150px;
+  height: auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 23
+}
+
+.aboutbuttonsgroup {
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.aboutbutton {
+  font: var(--button-font);
+  background-color: rgb(13, 119, 161);
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+
+.aboutbutton:hover {
+  background: rgb(6, 74, 114);
+  box-shadow: 0 0 20px #00ffffcc, inset 0 0 10px #66ccff;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN CONTENT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mainpagebanner {
+  background-color: var(--banner-color);
+  width: 100%;
+  font-family: var(--banner-font);
+  text-align: center;
+  font-size: calc(1.5vw + 1.5vh);
+  padding: 1%;
+  z-index: 2;
+}
+
+.mainpagecontent {
+  font-family: Georgia, serif;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 3%;
+  z-index: 3;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CUSTOM CONTENT STARTS HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mainpagegrid{
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  outline: var(--grid-outline);
+  justify-content: center;
+  text-align: center;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.mainpagegriditem{
+  margin: 1%;
+}
+
+.mainpagegridimage{
+  display: block;
+  object-fit: scale-down;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FIREFLIES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.firefly {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.5;
+  pointer-events: none;
+  will-change: transform, opacity;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.1; box-shadow: 0 0 5px 2px #fcff9e; }
+  50% { opacity: 1; box-shadow: 0 0 20px 8px #fcff9e; }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MEDIA QUERIES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media (max-width: 1024px) {
+  /* Slight adjustments for tablets or small laptops */
+
+  .mainpagesidebar {
+    width: 25%;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile view: stack instead of side-by-side */
+
+  .mainpage {
+    flex-direction: column-reverse;
+  }
+
+  .mainpagesidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    min-width: unset;
+  }
+
+}
+
+
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Snowy Writes</title>
+        <link href="mainstyles.css" rel="stylesheet">
+        <link href="eldorastyles.css" rel="stylesheet">
+        <script type="text/javascript" src="sections.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Jersey+25&family=Kranky&family=Marko+One&family=Mogra&display=swap" rel="stylesheet">" rel="stylesheet">
+    </head>
+    
+    <body class="eldorabody">
+        <!--<div class="starfield" id="starfield"></div>
+        <script type="text/javascript" src="starfield.js"></script>-->
+        <header>
+        <div class="eldoraheaderbox">
+        <img src="images/Snowyavi.jpg" class="titleimage">
+        <img src="images/FoxKnightWebsiteLogo.png" class="spacefoxtitleimage">
+        </div>
+    </header>
+        <div class="maincontainer">
+            <div class="eldoranavbar">
+                <nav>
+                    <a href="index.html" style="color:rgb(40, 51, 107)">Home</a> |
+                    <a href="eldora.html" style="color:rgb(40, 51, 107)">Eldora</a> |
+                    <a href="starlightsprings.html" style="color:rgb(40, 51, 107)">Starlight Springs</a> |
+                    <a href="menagerie.html" style="color:rgb(40, 51, 107)">The Menagerie</a> |
+                    <a href="starborne.html" style="color:rgb(40, 51, 107)">Starborne Horizons</a> |
+                    <a href="extendedflyuverse.html" style="color:rgb(40, 51, 107)">Extended Flyuverse</a> |
+                    <a href="artwork.html" style="color:rgb(40, 51, 107)">Artwork</a>
+                
+                </nav>
+            </div>
+            
+            <div class="eldoramain">
+                <div class="eldorasidebar">
+                    <aside>
+                        <h1>Index</h1>
+                        <div class="eldorasidebarbuttongroup">
+                            <button class="eldorasidebarbutton" id="eldoraintrobutton" onclick="showSection('EldoraIntro')">Intro</button>
+                            <button class="eldorasidebarbutton" id="eldorakingdomsbutton" onclick="showSection('EldoraKingdoms')">Kingdoms</button>
+                            <button class="eldorasidebarbutton" id="eldoraroyalfamiliesbutton" onclick="showSection('EldoraRoyalFamilies')">Royal Families</button>
+                            <button class="eldorasidebarbutton" id="eldoradeitiesbutton" onclick="showSection('Deities')">Deities</button>
+                            <button class="eldorasidebarbutton" id="eldoracommonersbutton" onclick="showSection('Commoners')">Commoners</button>
+                            <button class="eldorasidebarbutton" id="eldorafactionsbutton" onclick="showSection('Factions')">Factions</button>
+                        </div>
+                    </aside>
+                </div>
+                <div class="eldorabackgroundbox">
+                    <section>
+                        <div class="eldorabanner">
+                            <img src="images/eldorasword.png" class="eldoraswordimage1"/>The Continent of Eldora
+                            <img src="images/eldorasword.png" class="eldoraswordimage2" style="transform: scaleX(-1)"/>
+                        </div>
+                        <article class="eldoracontent">
+                            <div class="eldoragallery" id="eldoragallery">
+                                <!--Intro-->
+                                <div class="contentsection" id="section-EldoraIntro">
+                                    <div>
+                                        <div class="empirewelcome">
+                                            <h1 style="font-family: Marko One, serif; font-size: 16pt;">In ancient dawn, they took their stand,</br> Fire's fierce flame shaped the land. </br>
+                                                Ice's chill carved rivers wide</br> and oceans full with ebbing tide.</h1>
+                                            <img src="images/eldoraemblem.png" class="empirelogo">
+                                            <h1 style="font-family: Marko One, serif; font-size: 16pt;">Earth's quiet power took root and ploughed,</br> Thunder's rage forged sky and cloud.
+                                            </br>From primal breath to endless span,</br>Hail the Elder Dragons, creators of man!</h1>
+                                        </div>
+                                        <h1 style="font-size: 20pt; text-align: center; text-decoration: underline;">Here is some helpful information to help you begin your exploration!</h1>
+                                        <h2>What is Eldora?</h2>
+                                        <h3>Eldora is a fictional fantasy continent that serves as the setting for various other stories. It is split into a handful of kingdoms: Aranor, 
+                                            Gildria, Zephrya, Valora, Aquaria, and Pacifica.
+                                        </h3>
+                                    </div>
+                                </div>
+                                <!--Kingdoms-->
+                                <div class="contentsection" id="section-EldoraKingdoms" style="display:none;">Kingdoms content goes here...
+                                    <div class="contentsubsection" id="nested-eldorasubsection" style="display:none;">Eldora Sub info here...</div>
+                                </div>
+                                <!--RoyalFamilies-->
+                                <div class="contentsection" id="section-EldoraRoyalFamilies" style="display:none;">
+                                    <div class="flyuplanetbuttonsgroup">
+                                        <button class="nestedroyalfamiliesbutton" id="nested-royalfamiliesbutton" onclick="showNested('Nandora')">Nandora</button>
+                                        <button class="nestedroyalfamilesbutton" id="nested-royalfamiliesbutton" onclick="showNested('Darrow')">Darrow</button>
+                                        <button class="nestedplanetsbutton" id="nested-planetsbutton" onclick="showNested('Malvorik')">Malvorik</button>
+                                        <button class="nestedplanetsbutton" id="nested-planetsbutton" onclick="showNested('Destroyed')">Destroyed Planets</button>
+                                        <button class="nestedplanetsbutton" id="nested-planetsbutton" onclick="showNested('OtherPlaces')">Other Areas</button>
+                                    </div>
+                                    <div class="contentsubsection" id="nested-Colonies" style="display:none;">
+                                        <h1>Colony 946</h1>
+                                        <h1>Colony 8008</h1>
+                                        <h1>Colony 3233</h1>
+                                        <h1>Colony 2321</h1>
+                                        <h1>Colony 404</h1>
+                                    </div>
+                                    <div class="flyusubsection" id="nested-D" style="display:none;">
+                                        <h1>Alpha</h1>
+                                        <h1>Beta</h1>
+                                        <h1>Gamma</h1>
+                                        <h1>Delta</h1>
+                                        <h1>Epsilon</h1>
+                                    </div>
+                                    <div class="flyusubsection" id="nested-Dead" style="display:none;">
+                                        <h1>Circuria</h1>
+                                    </div>
+                                    <div class="flyusubsection" id="nested-Destroyed" style="display:none;">
+                                        <h1>Novaria</h1>
+                                    </div>
+                                    <div class="flyusubsection" id="nested-OtherPlaces" style="display:none;">
+                                        <h1>Research station Theta</h1>
+                                        <h1>The Midnight Sector</h1>
+                                        <h1>Haven-7</h1>
+                                    </div>
+                                </div>
+                                <!--Deities-->
+                                <div class="contentsection" id="section-Races" style="display:none;">
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('Circurians')">Circurians</button>
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('Novarians')">Novarians</button>
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('Changelings')">Changelings</button>
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('AvarianMindWorms')">Avarian Mind Worms</button>
+                                    <div class="flyusubsection" id="nested-Circurians" style="display:none;">Circurian info here...</div>
+                                    <div class="flyusubsection" id="nested-Novarians" style="display:none;">Novarian info here...</div>
+                                    <div class="flyusubsection" id="nested-Changelings" style="display:none;">Changeling info here...</div>
+                                    <div class="flyusubsection" id="nested-AvarianMindWorms" style="display:none;">Avarian info here...</div>
+                                </div>
+                                <!--Commoners-->
+                                <div class="contentsection" id="section-HLA" style="display:none;">HLA content goes here...
+                                    <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('Shrike')">The Shrike Crew</button>
+                                    <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('Voidrunner')">The Voidrunner Crew</button>
+                                    <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('Trio')">The Trio</button>
+                                    <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('PlanetSide')">Planet Side Members</button>
+                                    <div class="flyusubsection" id="nested-Shrike" style="display:none;">Shrike info here...</div>
+                                    <div class="flyusubsection" id="nested-Voidrunner" style="display:none;">Voidrunner info here...</div>
+                                    <div class="flyusubsection" id="nested-Trio" style="display:none;">Trio info here...</div>
+                                    <div class="flyusubsection" id="nested-PlanetSide" style="display:none;">Planet side info here...</div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <h3 style="text-align: center; color:antiquewhite">Copyright SnowyWrites 2025</h3>
+    </footer>
+</html>

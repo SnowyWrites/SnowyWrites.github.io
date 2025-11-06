@@ -1,0 +1,393 @@
+/*Main page*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+  overflow-x: hidden;
+}
+
+.mainbody {
+    background-image: url("images/jaibackground.jpg");
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 0px;
+    padding: 5px;
+    z-index: 0;
+}
+
+.mainheaderwrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mainheaderbox{
+  background: rgba(56, 134, 108, 0.5);
+  border: 10px solid transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 95%;
+  max-width: 100%;
+  height: auto;
+  border: 1px double rgb(196, 230, 250);
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: double;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.titleimage{
+  object-fit: scale-down;
+  max-width: 20%;
+  width: 100%;
+  height: auto;
+  margin-left: 2%;
+  flex-shrink: 1;
+  background-size: contain;
+  border-radius: 50%;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.foxtitleimage{
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 73%;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.maincontainer {
+  max-width: 95%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.mainnavbar {
+  font-family: "Jersey 25", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  display: inline-block;
+  background: rgba(56, 134, 108, 0.7);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px auto;
+  outline-style: double;
+  outline-color: rgb(196, 230, 250);
+  z-index: 2;
+}
+
+.mainpage {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.mainbackgroundbox {
+  background: rgba(56, 134, 108, 0.8);
+  outline-style: double;
+  outline-color: rgb(196, 230, 250);
+  width: 100%;
+  max-height: none;
+  overflow-y: auto;
+  margin: 10px auto;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction:column;
+  z-index: 2;
+}
+
+.mainpagesidebar {
+  background: rgba(56, 134, 108, 0.7);
+  outline-style: double;
+  outline-color: rgb(196, 230, 250);
+  width: 15%;
+  min-width: 150px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+.aboutbuttonsgroup {
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.aboutbutton {
+  font-family: "Jersey 25", sans-serif;
+  font-size: 35px;
+  background-color: rgb(13, 119, 161);
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.aboutbutton:hover {
+  background: rgb(6, 74, 114);
+  
+}
+
+.mainpagebanner {
+  background-color: rgb(13, 119, 161, 0.7);
+  width: 100%;
+  font-family: "Girassol", serif;
+  text-align: center;
+  font-size: 36pt;
+  padding: 5px;
+  z-index: 2;
+}
+
+.mainpagecontent {
+  font-family: Georgia, serif;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  z-index: 3;
+}
+
+.mainpageeldorabanner {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: ridge;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.mainpageeldorabannerimage {
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 30%;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.mainpagestarlightbanner {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: ridge;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.mainpagestarlightbannerimage {
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 30%;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.mainpagemenageriebanner {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: ridge;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.mainpagemenageriebannerimage {
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 25%;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.mainpagestarbornebanner {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: ridge;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.mainpagestarbornebannerimage {
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 30%;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.mainpageflyubanner {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: ridge;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.mainpageflyubannerimage {
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 25%;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.firefly {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.5;
+  pointer-events: none;
+  will-change: transform, opacity;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0.1; box-shadow: 0 0 5px 2px #fcff9e; }
+  50% { opacity: 1; box-shadow: 0 0 20px 8px #fcff9e; }
+}
+
+@media (max-width: 1024px) {
+  /* Slight adjustments for tablets or small laptops */
+  .titleimage,
+  .foxtitleimage {
+    max-width: 40%;
+  }
+
+  .mainpagesidebar {
+    width: 25%;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile view: stack instead of side-by-side */
+  .mainheaderbox {
+    flex-direction: column;
+  }
+
+  .mainpage {
+    flex-direction: column;
+  }
+
+  .mainpagesidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    min-width: unset;
+  }
+
+  .titleimage,
+  .foxtitleimage {
+    max-width: 70%;
+    margin: 10px auto;
+  }
+}
+
+
+
+

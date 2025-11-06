@@ -1,0 +1,188 @@
+:root {
+  --button-font: calc(0.8vw + 0.8vh) "Press Start 2P", sans-serif;
+  --button-text-color: #0ff;
+  --background-color: rgba(255, 255, 255, 0);
+  --banner-color: rgb(255, 0, 255, 0.5);
+  --banner-font: "Press Start 2P", cursive;
+  --main-outline: solid rgb(196, 230, 250);
+  --grid-outline: solid rgb(196, 230, 250) 2px;
+  --button-box-shadow: 0 0 20px #0ff, inset 0 0 10px #ff00ff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+  overflow-x: hidden;
+  flex-shrink: 1;
+}
+
+h1{
+  font-family: "Quantico", serif;
+  font-size: calc(1.5vw + 1.5vh);
+  overflow-wrap: break-word;
+  color: #0ff;
+}
+
+h2{
+  font-family: "Quantico", serif;
+  font-size: calc(0.9vw + 0.9vh);
+  overflow-wrap: break-word;
+  color: #0ff;
+}
+
+h3{
+  font-family: "Quantico", serif;
+  font-size: calc(0.8vw + 0.8vh);
+  overflow-wrap: break-word;
+  color: #0ff;
+}
+
+p{
+  font-family: "Quantico", serif;
+  font-size: calc(0.7vw + 0.7vh);
+  overflow-wrap: break-word;
+  color: #0ff;
+}
+
+a {
+  text-decoration: none;
+  color:#0ff;
+  font-size: calc(0.65vw + 0.65vh);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eldora page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mainbody {
+  background: radial-gradient(circle at center, #141414 0%, #000000 80%);
+}
+
+.mainbody::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+  to bottom,
+  rgba(0, 0, 0, 0) 0px,
+  rgba(0, 0, 0, 0) 2px,
+  rgba(0, 0, 0, 0.15) 3px
+  );
+  z-index: 5;
+}
+
+.maindropdowncontent{
+  background-color: rgb(0, 0, 0);
+}
+
+.maindropdowncontent a:hover{
+  background-color: rgb(255, 0, 255, 0.5);
+}
+
+.aboutbutton{
+  background: rgb(255, 0, 255, 0.5);
+  &:hover {
+    background-color: rgb(255, 0, 255, 0.4);
+    box-shadow: var(--button-box-shadow);
+  }
+}
+
+.mainpagecontent {
+  position: relative;
+  text-align: center;
+  justify-items: center;
+  padding: 40px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* unified glowing border */
+.mainpagecontent::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 3%;
+  pointer-events: none;
+  background:
+    linear-gradient(45deg, #0ff, transparent 8%),
+    linear-gradient(-45deg, #ff00ff, transparent 8%),
+    linear-gradient(to right, #0ff 2%, transparent 5%, transparent 95%, #ff00ff 98%),
+    linear-gradient(to bottom, #0ff 2%, transparent 5%, transparent 95%, #ff00ff 98%);
+  background-blend-mode: screen;
+  box-shadow: inset 0 0 40px #0ff, inset 0 0 80px #ff00ff;
+  z-index: 0;
+}
+
+/* optional glowing underlight for depth */
+.mainpagecontent::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  border-radius: 0 0 40px 40px;
+  background: radial-gradient(ellipse at bottom, rgba(0, 255, 255, 0.25), transparent 80%);
+  z-index: 0;
+}
+
+.mainpagebanner {
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.arcadebannertext {
+  color: #00ffff;
+  text-shadow: 0 0 6px #0ff, 0 0 20px #0ff;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+opacity: 1;
+}
+20%, 24%, 55% {
+opacity: 0.2;
+}
+}
+
+.game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10%;
+      padding: 2%;
+      width: 90%;
+      max-width: 100%;
+    }
+
+.game-tile {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+.game-tile:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff00ff, 0 0 50px #0ff;
+      border-color: #ff00ff;
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
+    }
+
+    .game-tile img {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #0ff;
+    }

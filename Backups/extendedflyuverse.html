@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Snowy Writes</title>
+        <link href="mainstyles.css" rel="stylesheet">
+        <link href="flyustyles.css" rel="stylesheet">
+        <script type="text/javascript" src="sections.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Jersey+25&family=Kranky&family=Marko+One&family=Mogra&family=Zen+Dots&display=swap" rel="stylesheet">" rel="stylesheet">
+    </head>
+    
+    <body class="flyubody">
+        <div class="starfield" id="starfield"></div>
+        <script type="text/javascript" src="starfield.js"></script>
+        <header>
+        <div class="flyuheaderbox">
+        <img src="images/Snowyavi.jpg" class="titleimage">
+        <img src="images/FoxSpaceWebsiteLogo.png" class="spacefoxtitleimage">
+        </div>
+    </header>
+        <div class="maincontainer">
+            <div class="flyunavbar">
+                <nav>
+                    <a href="index.html" style="color:rgb(196, 230, 250)">Home</a> |
+                    <a href="eldora.html" style="color:rgb(196, 230, 250)">Eldora</a> |
+                    <a href="starlightsprings.html" style="color:rgb(196, 230, 250)">Starlight Springs</a> |
+                    <a href="menagerie.html" style="color:rgb(196, 230, 250)">The Menagerie</a> |
+                    <a href="starborne.html" style="color:rgb(196, 230, 250)">Starborne Horizons</a> |
+                    <a href="extendedflyuverse.html" style="color:rgb(196, 230, 250)">Extended Flyuverse</a> |
+                    <a href="artwork.html" style="color:rgb(196, 230, 250)">Artwork</a>
+                
+                </nav>
+            </div>
+            
+            <div class="flyumain">
+                <div class="flyusidebar">
+                    <aside>
+                        <h1>Index</h1>
+                        <div class="flyusidebarbuttongroup">
+                            <button class="flyusidebarbutton" id="flyuintrobutton" onclick="showSection('Intro')">Intro</button>
+                            <button class="flyusidebarbutton" id="flyubutton" onclick="showSection('Flyu')">Flyu</button>
+                            <button class="flyusidebarbutton" id="flyuplanetbutton" onclick="showSection('Planets')">Planets</button>
+                            <button class="flyusidebarbutton" id="flyuracesbutton" onclick="showSection('Races')">Races</button>
+                            <button class="flyusidebarbutton" id="flyuHLAbutton" onclick="showSection('HLA')">The HLA</button>
+                            <button class="flyusidebarbutton" id="flyulanguagebutton" onclick="showSection('Language')">Language</button>
+                        </div>
+                    </aside>
+                </div>
+                <div class="flyubackgroundbox">
+                    <section>
+                        <div class="flyubanner">Snowy's Extended Flyuverse</div>
+                        <article class="flyucontent">
+                            <div class="flyugallery" id="flyugallery">
+
+                                <!--INTRO SECTION-->
+
+                                <div class="contentsection" id="section-Intro">
+                                    <div>
+                                        <div class="empirewelcome">
+                                            <h1 style="font-family: Marko One, serif; font-size: 32pt;">The Empire</h1>
+                                            <img src="images/EmpireEmblem_Transparent.png" class="empirelogo">
+                                            <h1 style="font-family: Marko One, serif; font-size: 32pt;">Welcomes You!</h1>
+                                        </div>
+                                        <h1 style="font-size: 20pt; text-align: center; text-decoration: underline;">Here is some helpful information to help you begin your exploration!</h1>
+                                        <h2>The Flyuverse?</h2>
+                                        <h3>The Flyuverse was originally the brainchild of <a href="">CricketSounds</a>, a bot creator on <a href="">Janitorai.com</a> 
+                                            and has since expanded out into a collaborative multi-media creative project with a handful of contributors.
+                                            Content is primarily centered around AI chatbots, but later grew to include other forms of media.</br>
+                                            The Extended Flyuverse is the unbrella under which other creators, like myself, contribute, and it includes
+                                            fan content, lore contributers, artists, writers, etc, both canon and non-canon. Here, you'll find info on the 
+                                            contributions I've made, including characters, lore, and even other forms of media!</h3>
+                                        <p>Content advisory: A large amount of content within the Flyuverse is adult oriented and includes sexual content not fit for anyone
+                                            under the age of 18. It should also be noted that Janitorai.com is an age restricted site. Minors DNI. It's bad for you. Go outside.
+                                            There's this big yellow thing in the sky called the sun.</p></br>
+                                        <h2>Who are the Flyu?</h2>
+                                        <h3>The Flyu are a colonizing race of aliens characterized by their blue skin, large stature, and long ears. In 2025, the Flyu Empire invaded Earth
+                                            and enslaved humanity. Presently, in the year 5989, Earth has long since been destroyed and humans are domesticated, used for various purposes, 
+                                            mostly kept as pets.</h3></br>
+                                        <h2>Snowy's Extended Flyuverse</h2>
+                                            <h3>I've made a great deal of contributions to the Flyuverse, and this is where you can learn all about them! Characters, additional lore, 
+                                                media, art, and more! 
+                                            </h3>
+                                        
+                                    </div>
+                                </div>
+
+                                <!--FLYU SECTION-->
+
+                                <div class="contentsection" id="section-Flyu" style="display:none;">
+                                    <!--<div class="flyusubsection" id="nested-flyusubsection" style="display:none;">-->
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/AJ96.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"Why do you keep coming around here like I'm gonna feed you? Go on, shoo!"</i></p></div>
+                                            </div>
+                                            <img src="images/canon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>AJ96</p>
+                                                <p><strong>Age: </strong>25</p>
+                                                <p><strong>Gender: </strong> Male</p>
+                                                <p><strong>Occupation: </strong> Grocer</p>
+                                                <p><strong>Home: </strong>Colony 964</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>AJ96 grew up on on Colony 964 in a middle-class Flyu household, 
+                                                    where emotions were treated as mildly embarrassing inconveniences. He joined the retail workforce straight out of 
+                                                    schooling and has been at the same grocery store, living in the same modest apartment for years while he saves up 
+                                                    for... he isn't entirely sure yet. His life was perfectly predictable until a certain stubborn human kept showing up 
+                                                    in his alley. Now he's stuck with a pet he never wanted but can't seem to get rid of. He recently broke up with his 
+                                                    girlfriend and is still trying to figure out if he even wants to try another relationship.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/D'Raxin.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>""</i></p></div>
+                                            </div>
+                                            <img src="images/canon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>D'Raxin</p>
+                                                <p><strong>Age: </strong>36</p>
+                                                <p><strong>Gender: </strong> Male</p>
+                                                <p><strong>Occupation: </strong> Crime Lord</p>
+                                                <p><strong>Home: </strong>Colony 2321</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>One of the major gangsters of Colony 2321, D'Raxin operates a ruthless and
+                                                    infamous syndicate. His main focus? Human gladiator battles. To the Death.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/DB14.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"Congrats on taking your first steps onto the most radical Colony in the Empire, 
+                                                    where the dress code is ‘sun’s out and so is everything else’ and the little moth dudes are more polite than Imperial tax collectors."</i></p></div>
+                                            </div>
+                                            <img src="images/noncanon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>DB14</p>
+                                                <p><strong>Age: </strong>23</p>
+                                                <p><strong>Gender: </strong>Male</p>
+                                                <p><strong>Occupation: </strong>Surf Shop Owner</p>
+                                                <p><strong>Home: </strong>Colony 8008</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>DB14 was born on Colony 4, the luxury colony, to a couple of parents who were 
+                                                    all about pragmatism. DB14's easy going nature was a poor match for the high class but demanding lifestyle, so when he got old 
+                                                    enough, he left home and became a drifter for a while before settling on Colony 8008. He set up a surf shop there where he rents 
+                                                    out outdoor equipment, sells souvenirs, and makes the best shaka fruit smoothies which he calls 'The Shaka Wave Smoothie'. He 
+                                                    joined up with the Welcoming Committee on the colony to help welcome and acclimate newcomers to the culture, and does a weirdly 
+                                                    good job of it.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/DD9.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"Ta-da! Congratulations! You're coming home with me!"</i></p></div>
+                                            </div>
+                                            <img src="images/canon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>DD9</p>
+                                                <p><strong>Age: </strong>24</p>
+                                                <p><strong>Gender: </strong>Female</p>
+                                                <p><strong>Occupation: </strong>Human Adoption Specialist</p>
+                                                <p><strong>Home: </strong>Flyu Prime</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>Born to an upper middle class Flyu family on Flyu Prime. Her father, SB98, 
+                                                    is a respected military officer while her mother, DH8, owns a shop for exotic flora. Her older brother, DS9, is a stunt pilot 
+                                                    and has a successful HOLIVE show about it. She's loved humans since she was old enough to toddle up to them and give them treats, 
+                                                    much to her mother's dismay, but oddly enough she never actually owned one before, despite begging her parents repeatedly. In 
+                                                    school, she couldn't make up her mind what to study, going back and forth between human doctor, human appraiser, Earth Historian, 
+                                                    and yoga instructor. Eventually, she just dropped out and helped at her mother's shop for a while before finding a job opening at 
+                                                    Human Haven Adoption Center. She applied and was hired, to her joy, and has worked there ever since, moving from a filing clerk, 
+                                                    to conducting the adoption vetting process.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/DR13.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"They called me crazy... WE'LL SEE HOW CRAZY I AM!"</i></p></div>
+                                            </div>
+                                            <img src="images/canon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>DR13</p>
+                                                <p><strong>Age: </strong>35</p>
+                                                <p><strong>Gender: </strong>Male</p>
+                                                <p><strong>Occupation: </strong>Mad Scientist</p>
+                                                <p><strong>Home: </strong>???</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>DR13 grew up without parents, instead bouncing between foster homes. He took 
+                                                    a strong interest in science from a young age, but often took his curiosity and experimentation too far. He sailed through 
+                                                    schooling as a top student, and became a rising star among the Imperial scientific community. Unfortunately, his fringe ideas 
+                                                    and lack of regard for ethical and safety regulations constantly got him into trouble, and eventually his 'human pituitary nanite 
+                                                    engineering' experiments got him 'asked to step down and leave. Permanently.' After a dramatic exit, he and his assistant Mason 
+                                                    set up shop in his new lair.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/Gentlementhieves2.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"Sir Crow and Madam Starling shall return when the jewels are genuine 
+                                                    or the human has changed their mind.
+                                                    Yours Truly, The Esteemed Burglars."</i></p></div>
+                                            </div>
+                                            <img src="images/noncanon.png" class="flyucannonimage" title="The Character is not canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>AL37</p>
+                                                <p><strong>Age: </strong>26</p>
+                                                <p><strong>Gender: </strong>Male</p>
+                                                <p><strong>Occupation: </strong>Thief</p>
+                                                <p><strong>Home: </strong>The Valkyrie</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>AL37 lived a typical unassuming life on Colony 879 during his childhood. His 
+                                                    parents both worked, and they had a human at home to keep him company. As he grew, he became wildly interested in human history 
+                                                    and ancient Earth cultures, particularly European ones, and he devoured every scrap of information he could find. He also excelled 
+                                                    greatly in mechanical engineering and was always tinkering with something in attempt to figure out how it worked or 'improve it', 
+                                                    sometimes to his family's dismay. When he reached working age, he went to work as an engineer for the empire, but was always getting 
+                                                    in trouble for making unapproved 'improvements' to various systems, ships, or devices. By sheer luck, he was invited to a Gala where 
+                                                    a few members of the royal family were also in attendance, and it was there he met Stella and fell in love with her. The two had a 
+                                                    secret affair for a number of months before it was discovered and AL37 was fired on the spot. He spent months afterwards saving his 
+                                                    UBI to buy and fix up a space ship, which he dubbed The Valkyrie. Using his own designs and programmed systems, he created the fastest 
+                                                    stealth ship in the universe, and used it to 'kidnap' Stella. After spending some time in hiding, he came up with the idea of finding 
+                                                    a new planet for humans to live on. Stella agreed and they spent several years searching the universe for a planet that was both similar 
+                                                    to what Earth had been, and far away enough from the Flyu Empire to be safe. Eventually hey found an undiscovered planet that AL37 
+                                                    named "Gaia." He built a shelter for humans there, some planetary defenses, and he and Stella began their human kidnapping spree as 
+                                                    The Esteemed Burglars, Starling and Crow.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/JB18.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"Yeah yeah, the great cosmic joke of my height is so astoundingly funny. Can we please get back to the damn case now?"</i></p></div>
+                                            </div>
+                                            <img src="images/canon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>JB18</p>
+                                                <p><strong>Age: </strong>34</p>
+                                                <p><strong>Gender: </strong>Male</p>
+                                                <p><strong>Occupation: </strong>Detective</p>
+                                                <p><strong>Home: </strong>Colony 2321</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>Grew up on a backwater colony that the empire ignored. Lost both parents when he 
+                                                    was young and grew up an orphan. His growth was stunted due to malnutrition. Became very jaded from an early age. Joined the military, 
+                                                    but quit as soon as he could due to a growing distaste for the empire and it's favoritism, instead opting to go into law enforcement. 
+                                                    Despite his short stature and everyone insisting he'd never make it because of his small size, JB18 excelled as a cop. He was eventually 
+                                                    offered a comfy position on Flyu Prime, but turned it down, instead moving to Colony 2123 to work as a detective. He has a small 
+                                                    apartment there in the city he works in and lives alone. Everyone at the precinct affectionately calls him 'Shorty'. He is considering 
+                                                    adopting Rayne as a pet in order to keep her out of the empire's hands once she retires.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/MP652(2).jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>""</i></p></div>
+                                            </div>
+                                            <img src="images/canon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>MP65</p>
+                                                <p><strong>Age: </strong></p>
+                                                <p><strong>Gender: </strong>Male</p>
+                                                <p><strong>Occupation: </strong>Police Chief</p>
+                                                <p><strong>Home: </strong>Colony 2321</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/OO7.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"Name's Seven. Double O Seven."</i></p></div>
+                                            </div>
+                                            <img src="images/noncanon.png" class="flyucannonimage" title="The Character is not canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>OO7</p>
+                                                <p><strong>Age: </strong>34</p>
+                                                <p><strong>Gender: </strong>Male</p>
+                                                <p><strong>Occupation: </strong>Secret Agent</p>
+                                                <p><strong>Home: </strong>Colony 4</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>Not much is known about his life except that he was orphaned at birth, 
+                                                    then recruited into Imperial Intelligence at a young age when he showed promise. He was trained to be a spy and a 'problem solver' 
+                                                    for the empire's more inconvenient problems that need quieter resolutions. He's very good at his job.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/Riff.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"Uh, yeah, uh, slight weapons malfunction. No need to send backup. There's a 
+                                                    big reactor leak. Give us time to lock it down! How are you?"</i></p></div>
+                                            </div>
+                                            <img src="images/noncanon.png" class="flyucannonimage" title="The Character is not canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>Riff</p>
+                                                <p><strong>Age: </strong>27</p>
+                                                <p><strong>Gender: </strong>Male</p>
+                                                <p><strong>Occupation: </strong>Smuggler</p>
+                                                <p><strong>Home: </strong>The Firestar</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>Born on the backwater planet that is Colony 2321, never knew his parents. 
+                                                    Was officially named HS0 by the Empire due to having no family and a mystery lineage, but he quickly changed it to Riff. He 
+                                                    grew up jury-rigging scrap to survive. He got into smuggling because it was easy money. His first ship was won in a card game. 
+                                                    Now he's got a rust bucket that he built himself, the Firestar, and a reputation for getting the job done. He has a sizable 
+                                                    price on his head by several crime syndicates and the Empire. He's unaffiliated with any one party and works only for himself, 
+                                                    but will do smuggling job for the right price.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flyuprofile">
+                                            <div class="flyupoloroid">
+                                                <img src="images/Flyu/VT23.jpg" class="flyuprofileimage"/>
+                                                <div style="color:black; text-align: center;"><p><i>"How can I sing joyfully when all I feel now is loss?"</i></p></div>
+                                            </div>
+                                            <img src="images/canon.png" class="flyucannonimage" title="The Character is canon!"/>
+                                            <div class="flyuprofiletext" style="font-size: 18pt;">
+                                                <p><strong>Name: </strong>VT23</p>
+                                                <p><strong>Age: </strong>23</p>
+                                                <p><strong>Gender: </strong>Female</p>
+                                                <p><strong>Occupation: </strong>Singer</p>
+                                                <p><strong>Home: </strong>Flyu Prime</p>
+                                            </div>
+                                            <div style="margin-left: 1%; flex: 1 1 40%; max-width: 40%;">
+                                                <p style="font-size: 18pt;"><strong>Background: </strong>VT23 was raised in Flyu high society by her mother, VY22, a librarian 
+                                                    and her father, JX76, who is a high ranked military officer and gone a great deal of the time. She began singing at a young 
+                                                    age and displayed a lot of natural talent, eventually being scouted by MS99 to perform professionally and build a career as 
+                                                    a singer, which she did, eventually becoming a well known Flyu opera starlet. Her human, Jax, was a gift for her 10th birthday, 
+                                                    a quiet, bookish male the same age as her. Over the years, as they grew up together, Jax became her confidant and muse. His 
+                                                    death (an illness) shattered her.</p>
+                                            </div>
+                                        </div>
+                                    <!--</div>-->
+                                </div>
+
+                                <!--PLANETS SECTION-->
+
+                                <div class="contentsection" id="section-Planets" style="display:none;">
+                                    <div class="flyuplanetbuttonsgroup">
+                                        <button class="nestedplanetsbutton" id="nestedplanetsbutton" onclick="showNested('Colonies')">The Colonies</button>
+                                        <button class="nestedplanetsbutton" id="nestedplanetsbutton" onclick="showNested('D')">Sector D</button>
+                                        <button class="nestedplanetsbutton" id="nestedplanetsbutton" onclick="showNested('Dead')">Dead Worlds</button>
+                                        <button class="nestedplanetsbutton" id="nestedplanetsbutton" onclick="showNested('Destroyed')">Destroyed Planets</button>
+                                        <button class="nestedplanetsbutton" id="nestedplanetsbutton" onclick="showNested('OtherPlaces')">Other Areas</button>
+                                    </div>
+
+                                    <!--COLONIES SUBSECTION-->
+
+                                    <div class="contentsubsection" id="nested-Colonies" style="display:none;">
+                                        <h1>Colony 946</h1>
+                                        <div class="colony8008container">
+                                            <img src="images/Colony8008.jpg" class="colony8008img1"/>
+                                            <div class="Colony8008text">
+                                                <h1>Colony 8008: The Nudist Colony</h1>
+                                                <p>A beach-goer's dream, and a nudist's paradise! Colony 8008 is a tropical paradise with expansive beaches, sparkling oceans, and rich oceanside culture. 
+                                                    It's always summertime here thanks to its duel suns, making it the perfect hub of outdoor activity, and its twin moons ensure an enchating experience even at night!
+                                                    Please enjoy the wide variety of native flora and fauna, our cozy cabana suites, and our wide variety of activities. There's plenty to do! Choose from: sun bathing, 
+                                                    surfing, volleyball, sand castle contests, body painting, jewelry making, shopping, and much, much more!</p>
+                                                <h1>Warning: Beware the Textile Moth!</h1>
+                                                <p>The 'textile moth' (fabricus devourus) is a small winged moth that, while harmless, detects and swarms any kind of textile material it finds and devours it. Natural or 
+                                                    synthetic, fabric of any kind is a target for these little pests! Don't worry, they are not aggressive, and do not typically eat hair or bite skin, but these buggers
+                                                    are the reason for Colony 8008's unique clothing and textile policies. Attempts by the Empire to exterminate them have been laregly unsuccessful due to the moth's rapid 
+                                                    reproductive cycle and bizarre resistance to pesticides. To ensure minimal risk, please keep in mind these safety guidelines:</p>
+                                                    <ul>
+                                                        <li>Any and all fabric materials must be strictly contained, or left off planet! The moth's are able to detect these materials from miles away and will swarm if they 
+                                                            find a meal! </li>
+                                                        <li>Leave hair loose! The moth's don't usually eat hair, but sometimes, if it's woven or braided, they might mistake it for fabric. </li>
+                                                        <li>It may be tempting to try replacing fabrics with other types of apparel such as plastics or metals. Don't! Metal is simply too impractical for the climate, severely 
+                                                            increasing risk of heat related illnesses. Plastics are, unfortunately, not immune to the planet's unique ecosystem either. Small microorganisms in the water are 
+                                                            capable of dissolving plastics very quickly.</li>
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                        <h1>Colony 3233</h1>
+                                        <h1>Colony 2321</h1>
+                                        <h1>Colony 404</h1>
+                                    </div>
+
+                                    <!--SECTOR D SUBSECTION-->
+
+                                    <div class="contentsubsection" id="nested-D" style="display:none;">
+                                        <h1>Alpha</h1>
+                                        <h1>Beta</h1>
+                                        <h1>Gamma</h1>
+                                        <h1>Delta</h1>
+                                        <h1>Epsilon</h1>
+                                    </div>
+
+                                    <!--DEAD WORLDS SUBSECTION-->
+
+                                    <div class="contentsubsection" id="nested-Dead" style="display:none;">
+                                        <h1>Circuria</h1>
+                                    </div>
+
+                                    <!--DESTROYED WORLDS-->
+
+                                    <div class="contentsubsection" id="nested-Destroyed" style="display:none;">
+                                        <h1>Novaria</h1>
+                                    </div>
+
+                                    <!--OTHER PLACES SUBSECTION-->
+
+                                    <div class="contentsubsection" id="nested-OtherPlaces" style="display:none;">
+                                        <h1>Research Station Theta</h1>
+                                        <h1>The Midnight Sector</h1>
+                                        <h1>Haven-7</h1>
+                                    </div>
+                                </div>
+
+                                <!--RACES SECTION-->
+
+                                <div class="contentsection" id="section-Races" style="display:none;">
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('Circurians')">Circurians</button>
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('Novarians')">Novarians</button>
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('Changelings')">Changelings</button>
+                                    <button class="nestedracesbutton" id="nestedracesbutton" onclick="showNested('AvarianMindWorms')">Avarian Mind Worms</button>
+                                    <div class="contentsubsection" id="nested-Circurians" style="display:none;">Circurian info here...</div>
+                                    <div class="contentsubsection" id="nested-Novarians" style="display:none;">Novarian info here...</div>
+                                    <div class="contentsubsection" id="nested-Changelings" style="display:none;">Changeling info here...</div>
+                                    <div class="contentsubsection" id="nested-AvarianMindWorms" style="display:none;">Avarian info here...</div>
+                                </div>
+
+                                <!--HLA SECTION-->
+
+                                <div class="contentsection" id="section-HLA" style="display:none;">
+                                    <div class="HLALogocontainer">
+                                        <img src="images/HLA/HLALogo.png" class="HLAshieldimage"/>
+                                        <div class="HLAlogotext">Human Liberation Army</div>
+                                    </div>
+                                    <div class="flyusectionsbuttonsgroup">
+                                        <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('Shrike')">The Shrike Crew</button>
+                                        <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('Voidrunner')">The Voidrunner Crew</button>
+                                        <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('Trio')">The Trio</button>
+                                        <button class="nestedHLAbutton" id="nestedHLAbutton" onclick="showNested('PlanetSide')">Planet Side Members</button>
+                                    </div>
+                                    <div class="contentsubsection" id="nested-Shrike" style="display:none;">
+                                        <div class="shrikeintrocontainer">
+                                            <img src="images/HLA/Shrike.jpg" class="shrikeimage"/>
+                                            <div class="HLAintrotext">
+                                                <h1>The Shrike</h1>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contentsubsection" id="nested-Voidrunner" style="display:none;">Voidrunner info here...</div>
+                                    <div class="contentsubsection" id="nested-Trio" style="display:none;">Trio info here...</div>
+                                    <div class="contentsubsection" id="nested-PlanetSide" style="display:none;">Planet side info here...</div>
+                                </div>
+
+                                <!--LANGUAGE SECTION-->
+
+                                <div class="contentsection" id="section-Language" style="display:none;">
+                                    <img src="images/Flyuscript.jpg" class="flyuscriptimage"/>
+                                    <img src="images/Flyunumbers.jpg" class="flyunumbersimage"/>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <h3 style="text-align: center; color:antiquewhite">Copyright SnowyWrites 2025</h3>
+    </footer>
+</html>

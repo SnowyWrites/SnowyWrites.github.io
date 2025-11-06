@@ -1,0 +1,80 @@
+:root {
+  --button-font: calc(1.5vw + 1.5vh) "Jersey 25", sans-serif;
+  --button-text-color: rgb(40, 51, 107);
+  --background-color: rgba(255, 255, 255, 0.5);
+  --banner-color: rgb(109, 118, 240);
+  --banner-font: "Girassol", serif;
+  --main-outline: double rgb(196, 230, 250);
+  --grid-outline: solid rgb(196, 230, 250) 2px;
+  --button-box-shadow: 0 0 20px #d2afffcc, inset 0 0 10px #ebe0fc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+  overflow-x: hidden;
+  flex-shrink: 1;
+}
+
+h1{
+  font-family: Georgia, serif;
+  font-size: calc(1.5vw + 1.5vh);
+  overflow-wrap: break-word;
+}
+
+h2{
+  font-family: Georgia, serif;
+  font-size: calc(0.9vw + 0.9vh);
+  overflow-wrap: break-word;
+}
+
+h3{
+  font-family: Georgia, serif;
+  font-size: calc(0.8vw + 0.8vh);
+  overflow-wrap: break-word;
+}
+
+p{
+  font-family: Georgia, serif;
+  font-size: calc(0.7vw + 0.7vh);
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(40, 51, 107);
+  font-size: calc(1.5vw + 1.5vh);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eldora page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.mainbody {
+  background-image: url("images/eldorabg.jpg");
+}
+
+.aboutbutton {
+  background-color: rgb(109, 118, 240);
+  &:hover {
+    background-color: rgb(105, 79, 207);
+    box-shadow: 0 0 20px #d2afffcc, inset 0 0 10px #ebe0fc;
+  }
+}
+
+.empirewelcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.empirelogo {
+  width: 25%;
+  display: block;
+  margin: 20px;
+}
+

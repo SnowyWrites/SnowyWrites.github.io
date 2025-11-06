@@ -1,0 +1,230 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Eldora page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.eldorabody {
+  background-image: url("images/eldorabg.jpg");
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0px;
+  top: 0px;
+  overflow-y: auto;
+  z-index: 0;
+}
+
+.eldoraheaderbox {
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 95%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgb(196, 230, 250);
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: solid;
+  outline-color: rgb(196, 230, 250);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+.spacefoxtitleimage{
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 73%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.eldoranavbar {
+  font-family: "Jersey 25", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  outline-style: groove;
+  outline-color: rgb(40, 51, 107);
+  z-index: 2;
+}
+
+.eldoramain {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.eldorabackgroundbox {
+  background: rgba(255, 255, 255, 0.5);
+  outline-style: solid;
+  outline-color: rgb(196, 230, 250);
+  width: 100%;
+  max-height: none;
+  overflow-y: auto;
+  height: auto;
+  margin: 10px auto;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.eldorabanner {
+  background-color: rgb(109, 118, 240);
+  width: 100%;
+  font-family: "Girassol", serif;
+  text-align: center;
+  font-size: 36pt;
+  padding: 5px;
+}
+
+.empirewelcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.empirelogo {
+  width: 25%;
+  display: block;
+  margin: 20px;
+}
+
+.eldorasidebar {
+  background: rgba(255, 255, 255, 0.5);
+  outline-style: solid;
+  outline-color: rgb(196, 230, 250);
+  width: 15%;
+  min-width: 150px;
+  height: auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 2;
+}
+
+.eldorasidebarbuttongroup {
+  background-color:darkslategrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:auto;
+  margin: 0 auto;
+}
+
+.eldorasidebarbutton{
+  font-family: "Jersey 25", sans-serif;
+  font-size: 35px;
+  background-color: rgb(109, 118, 240);
+  display: block;
+  text-align: right;
+  width: 100%;
+  height:auto;
+  padding: 10px;
+}
+
+.eldorasidebarbuttongroup .eldorasidebarbutton:hover {
+  background:rgb(46, 56, 192);
+  
+}
+
+.eldorakingdomsbuttonsgroup {
+  background-color: darkslategray;
+}
+
+#eldorakingdomsbutton {
+  background-image: url("images/flyusmile.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#eldorakingdomsbutton:hover {
+  background-image: url("images/flyusmile.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#eldoraroyalfamiliesbutton {
+  background-image: url("images/Planetclouds.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#eldoraroyalfamiliesbutton:hover {
+  background-image: url("images/Planet.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#eldoradeitiesbutton {
+  background-image: url("images/HLAshield.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#eldoradeitiesbutton:hover {
+  background-image: url("images/HLAfire.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#eldoracommonersbutton {
+  background-image: url("images/races.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#eldoracommonersbutton:hover {
+  background-image: url("images/races.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#eldorafactionsbutton {
+  background-image: url("images/races.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#eldorafactionsbutton:hover {
+  background-image: url("images/races.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.eldoracontent {
+  font-family: Georgia, serif;
+  margin: 20px;
+  overflow-wrap: break-word;
+    padding: 20px;
+    overflow-x: auto;
+    align-items: center;
+      
+}

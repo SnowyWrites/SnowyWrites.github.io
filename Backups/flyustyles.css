@@ -1,0 +1,423 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Flyu page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.flyubody {
+  background: black;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0px;
+  top: 0px;
+  overflow-y: auto;
+  z-index: 0;
+}
+
+.starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(-45deg, white, rgba(255,255,255,0));
+  opacity: 0;
+  transform: rotate(45deg);
+  animation: shoot 1s linear forwards;
+  z-index: 1;
+}
+
+@keyframes shoot {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) rotate(130deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-500px, 500px) rotate(130deg);
+  }
+}
+
+.flyuheaderbox {
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 95%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgb(196, 230, 250);
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: solid;
+  outline-color: rgb(196, 230, 250);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+.spacefoxtitleimage{
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 73%;
+  height: auto;
+  margin-left: auto;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.flyunavbar {
+  font-family: "Jersey 25", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid rgb(196, 230, 250);
+  padding: 10px;
+  margin: 10px auto;
+  outline-style: solid;
+  outline-color: rgb(196, 230, 250);
+  z-index: 2;
+}
+
+.flyumain {
+  display: flex;
+  color:aliceblue;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.flyubackgroundbox {
+  background: rgba(255, 255, 255, 0.05);
+  outline-style: solid;
+  outline-color: rgb(196, 230, 250);
+  width: 100%;
+  max-height: none;
+  overflow-y: auto;
+  height: auto;
+  margin: 10px auto;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.flyubanner {
+  background-color: rgb(91, 182, 235);
+  width: 100%;
+  font-family: "Mogra", system-ui;
+  text-align: center;
+  font-size: 36pt;
+  text-shadow: 2px 2px 4px black;
+  padding: 5px;
+}
+
+.empirewelcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.empirelogo {
+  width: 25%;
+  display: block;
+  margin: 20px;
+}
+
+.flyusidebar {
+  background: rgba(255, 255, 255, 0.05);
+  outline-style: solid;
+  outline-color: rgb(196, 230, 250);
+  width: 15%;
+  min-width: 150px;
+  height: auto;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 3;
+}
+
+.flyusidebarbuttongroup {
+  background-color:darkslategrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:auto;
+  margin: 0 auto;
+}
+
+.flyusidebarbutton{
+  font-family: "Jersey 25", sans-serif;
+  font-size: 35px;
+  background-color: rgb(91, 182, 235);
+  display: block;
+  text-align: right;
+  width: 100%;
+  height:auto;
+  padding: 10px;
+}
+
+.flyusidebarbuttongroup .flyusidebarbutton:hover {
+  background:rgb(6, 74, 114);
+  
+}
+
+#flyuplanetbutton {
+  background-image: url("images/Planetclouds.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#flyuplanetbutton:hover {
+  background-image: url("images/Planet.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#flyubutton {
+  background-image: url("images/flyusmile.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#flyubutton:hover {
+  background-image: url("images/flyusmile.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#flyuHLAbutton {
+  background-image: url("images/HLAshield.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#flyuHLAbutton:hover {
+  background-image: url("images/HLAfire.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+#flyuracesbutton {
+  background-image: url("images/races.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-origin: content-box;
+}
+
+#flyuracesbutton:hover {
+  background-image: url("images/races.gif");
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.flyucontent {
+  font-family: Georgia, serif;
+  margin: 20px;
+  overflow-wrap: break-word;
+  padding: 20px;
+  overflow-x: auto;
+  align-items: center;
+  z-index: 3;
+}
+
+.flyuprofile {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 1%;
+  margin: 20px auto;
+  outline-style: ridge;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.flyupoloroid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  max-width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2% 1%;
+  border: 1px solid #ccc;
+  flex: 1 1 45%;
+}
+
+.flyuprofileimage {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 2%;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.flyucannonimage {
+  object-fit: scale-down;
+  position: absolute;
+  top: .1%;
+  max-width: 5%;
+  width: 100%;
+  height: auto;
+  margin: 0.5%;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+  border-radius: 60%;;
+  outline-style: ridge;
+  outline-color: #fcff9e;
+  background-color: azure;
+}
+
+.flyuprofiletext {
+  flex: 1 1 40%;
+  padding: 1%;
+  margin: 1%;
+  max-width: 20%;
+}
+
+.flyusectionsbuttonsgroup {
+  background-color:darkslategrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height:auto;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.nestedHLAbutton {
+  font-family: "Jersey 25", sans-serif;
+  font-size: 28pt;
+  background-color: rgb(91, 182, 235);
+  display: block;
+  text-align: center;
+  width: 100%;
+  height:auto;
+  padding: 10px;
+  z-index: 3;
+}
+
+.flyusectionsbuttonsgroup .nestedHLAbutton:hover {
+  background:rgb(6, 74, 114);
+}
+
+.colony8008container {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  outline-style: ridge;
+  outline-color: rgb(196, 230, 250);
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.colony8008img1 {
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 30%;
+  width: 100%;
+  height: auto;
+  margin: 2%;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.Colony8008text {
+  flex: 1;
+}
+
+.HLALogocontainer {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 20px auto;
+  overflow-x: visible;
+  z-index: 2;
+}
+
+.HLAshieldimage {
+  object-fit: scale-down;
+  object-position: right;
+  max-width: 30%;
+  width: 100%;
+  height: auto;
+  margin: 1%;
+  flex-shrink: 1;
+  background-size: contain;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.HLAlogotext {
+  font-family: "Zen Dots", sans-serif;
+  font-size: 48pt;
+}

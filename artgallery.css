@@ -1,0 +1,17 @@
+.mainpagegrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  align-items: start;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.mainpagegridimage{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
